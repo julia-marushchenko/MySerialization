@@ -20,6 +20,7 @@ public class Main {
 			FileOutputStream fos = new FileOutputStream("Book.txt");
 			ObjectOutputStream oos = new ObjectOutputStream(fos);
 			oos.writeObject(book);
+			oos.close();
 			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
