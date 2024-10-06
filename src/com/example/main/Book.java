@@ -28,10 +28,6 @@ public class Book implements Serializable{
 		YearOfpublishing = yearOfpublishing;
 		this.plot = plot;
 	}
-	public Book(int id) {
-		super();
-		this.id = id;
-	}
 	public Book() {
 		super();
 	}
