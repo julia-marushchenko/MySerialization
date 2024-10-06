@@ -18,7 +18,12 @@ public class Book implements Serializable{
 	int YearOfpublishing;
 	// Plot of the book
 	transient String plot;
-		
+	
+	//Constractor without parameters
+	public Book() {
+		super();
+	}
+	
 	// Constructor with required information to add it to a storage
 	public Book(int id, String name, String author, int yearOfpublishing, String plot) {
 		super();
@@ -27,9 +32,6 @@ public class Book implements Serializable{
 		this.author = author;
 		YearOfpublishing = yearOfpublishing;
 		this.plot = plot;
-	}
-	public Book() {
-		super();
 	}
 	public int getId() {
 		return id;
